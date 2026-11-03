@@ -262,8 +262,7 @@ jobs:
             fi
           } > /tmp/reply.md
           gh issue comment "$REQUEST" -R "$GITHUB_REPOSITORY" --body-file /tmp/reply.md
-YAML
-- name: Upload firmware artifacts
+      - name: Upload firmware artifacts
   uses: actions/upload-artifact@v4
   with:
     name: openipc-ssc30kq-ultimate
