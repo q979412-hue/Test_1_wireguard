@@ -263,7 +263,7 @@ jobs:
           } > /tmp/reply.md
           gh issue comment "$REQUEST" -R "$GITHUB_REPOSITORY" --body-file /tmp/reply.md
       - name: Upload firmware artifacts
-  uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v4
   with:
-    name: openipc-ssc30kq-ultimate
+        name: openipc-ssc30kq-ultimate
     path: output/images/*
